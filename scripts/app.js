@@ -11,13 +11,8 @@
 angular
     .module('imageLooperApp', [
         'ngAnimate',
-        'ngCookies',
-        'ngResource',
         'ui.router',
-        'ngSanitize',
-        'ngTouch',
         'ngMaterial',
-        'angularScreenfull',
         'LocalStorageModule',
         'infinite-scroll',
         'firebase'
