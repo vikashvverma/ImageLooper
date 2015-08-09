@@ -37,7 +37,7 @@
                         <a ng-href="{{image.url}}" download> <md-icon class="download" md-font-set="fa fa-cloud-download fa-2x" ></md-icon></a>
 
                     </div>
-                    <img bn-lazy-src="{{image.url}}"  style="max-width:100%;max-height: 100%;" alt="{{image.name}}" />
+                    <img ng-src="{{image.url}}"  style="max-width:100%;max-height: 100%;" alt="{{image.name}}" />
                 </div>
             </div>
             <md-grid-tile-footer ng-style="{'background-color':vm.getRandomColor($index)}"> <md-icon  ng-click="vm.expand($event);" class="expand" md-font-set="fa fa-arrows-alt fa-2x" ></md-icon><md-icon class="chart" md-font-set="fa fa-bar-chart fa-2x" ng-click="vm.showChart($event,$index);"></md-icon></md-grid-tile-footer>
