@@ -10,7 +10,6 @@
  */
 angular
     .module('imageLooperApp', [
-        'ngAnimate',
         'ui.router',
         'ngMaterial',
         'LocalStorageModule',
