@@ -1,0 +1,89 @@
+<div  layout="column" style="/*padding-bottom: 15px;*/" class="main" >
+  <md-sidenav layout="column" class="md-sidenav-left md-whiteframe-z2" md-component-id="left" style="z-index:1001;" ng-click="vm.toggleSidenav('left');">
+    <md-toolbar class="md-tall " style="background: url('assets/images/landscape.jpg')" layout="row" layout-align="center center">
+      <div style="font-size: 40px;">ImageLooper</div>
+    </md-toolbar>
+    <md-list>
+      <md-list-item ng-repeat="item in vm.mainMenu"  md-ink-ripple='#03A9F4' style="cursor: pointer;" >
+        <a ui-sref="{{item.url}}" style="width: 100%;text-decoration: none;color: rgba(0, 0, 0, 0.87);">
+          <p>{{ item.title }}</p>
+
+        </a>
+      </md-list-item>
+      <md-divider></md-divider>
+      <md-list-item ng-repeat="item in vm.extraMenu"  md-ink-ripple='#03A9F4' style="cursor: pointer;">
+        <a ng-href="{{item.url}}" target="_blank" style="width: 100%;text-decoration: none;color: rgba(0, 0, 0, 0.87);">
+          <p>{{ item.title }}</p>
+
+        </a>
+      </md-list-item>
+    </md-list>
+  </md-sidenav>
+
+  <md-sidenav layout="column" class="md-sidenav-right md-whiteframe-z2" md-component-id="right" style="z-index:1001;" ng-click="vm.toggleSidenav('right');">
+    <md-toolbar class="md-tall ">
+      <span flex></span>
+      <div layout="column" class="md-toolbar-tools-bottom inset">
+        <user-avatar></user-avatar>
+        <span></span>
+        <div>{{vm.getCurrentUser().first_name?vm.getCurrentUser().first_name:vm.getCurrentUser().name}} {{vm.getCurrentUser().last_name}}</div>
+        <div>{{vm.getCurrentUser().email}}</div>
+      </div>
+    </md-toolbar>
+    <md-list>
+      <md-list-item ng-click="vm.logout();">
+        <md-icon md-font-set="fa fa-sign-out fa-2x "></md-icon>
+        <p> Logout </p>
+      </md-list-item>
+      <md-divider></md-divider>
+    </md-list>
+  </md-sidenav>
+
+  <md-toolbar looper-header style="position:fixed;z-index:1000;">
+    <div class="md-toolbar-tools ">
+      <h2>
+        <span ui-sref="main" style="cursor: pointer;">ImageLooper</span>
+      </h2>
+        <!--<span>Like,Share &amp; Download!</span>-->
+      <span flex=""></span>
+        <md-switch class="md-accent" aria-label="Scroll" ng-model="vm.scroll">
+            Scroll {{vm.scroll?'on':'off'}}
+        </md-switch>
+
+
+    </div>
+  </md-toolbar>
+
+  <md-content looper-content style="margin-top:64px;min-height: calc(100vh - 128px);padding: 5px;padding-bottom: -100px;"  ng-include=" 'views/image-grid.html' ">
+
+
+
+
+  </md-content>
+  <div style="bottom: 0;right:0;position: fixed;z-index: 1002;">
+
+    <md-fab-speed-dial md-open="false" md-direction="up"
+                       class="md-fling">
+      <md-fab-trigger>
+        <md-button aria-label="menu" class="md-fab md-primary" >
+          <md-icon md-font-set="fa fa-bars fa-2x " style="vertical-align: text-bottom;"></md-icon>
+        </md-button>
+      </md-fab-trigger>
+      <md-fab-actions>
+        <md-button aria-label="facebook" class="md-fab md-raised md-mini  facebook">
+          <a href="https://www.facebook.com/vikashvverma" target="_blank"> <md-icon md-font-set="fa fa-facebook fa-2x  " class="facebook"></md-icon></a>
+        </md-button>
+        <md-button aria-label="Google+" class="md-fab md-raised md-mini google" >
+          <a href="https://www.google.com/+VikashVerma" target="_blank"> <md-icon md-font-set="fa fa-google-plus fa-2x " class="google"></md-icon></a>
+        </md-button>
+        <md-button aria-label="GitHub" class="md-fab md-raised md-mini github" >
+          <a href="https://www.github.com/vikashvverma" target="_blank"><md-icon md-font-set="fa fa-github fa-2x " class="github" ></md-icon></a>
+        </md-button>
+      </md-fab-actions>
+    </md-fab-speed-dial>
+  </div>
+  <md-toolbar style="background-color: #202020;" >
+
+    <span style="text-align: center;font-size:14px;line-height: 64px;">&copy; <a href="http://www.programminggeek.in" target="_blank" style="color:#428bca;text-decoration: none;"> Programming Geek</a>, All Rights Reserved</span>
+  </md-toolbar>
+</div>

@@ -1,0 +1,55 @@
+<div  flex infinite-scroll='vm.next()' infinite-scroll-disabled='!vm.scroll' infinite-scroll-distance='0.5'>
+    <md-grid-list
+            md-cols-sm="1" md-cols-md="2" md-cols-gt-md="4"
+            md-row-height-gt-md="4:3" md-row-height="4:3"
+            md-gutter="8px" md-gutter-gt-sm="10px" class="users" >
+        <md-grid-tile class="animate md-whiteframe-z2" ng-repeat="image in vm.images track by $index"
+                      md-rowspan="{{image.rowspan?image.rowspan:1}}"
+                      md-colspan="{{image.colspan?image.colspan:1}}"
+                      md-colspan-sm="1"
+                      ng-class="image.background?image.background:''" ng-style="{background:image.color}" >
+            <div class="main-profile" style="position:initial;width:100%;height:100%;padding-bottom:48px;">
+                <div class="card " style="  height: 100%;margin:0;" back1-img="{{image.url}}">
+                    <div class="card-content white-text" style="width:100%;padding: 10px;position: absolute;">
+                      <md-icon class="like" md-font-set="fa fa-check fa-2x" ng-show="vm.isLiked(image.name)"><span>{{vm.getLikes(image.name); }}</span></md-icon>
+                      <md-icon class="like" md-font-set="fa fa-hand-o-right fa-2x" style="cursor: pointer;" ng-click="vm.like($index);" ng-hide="vm.isLiked(image.name)"><span>{{vm.getLikes(image.name); }}</span></md-icon>
+                        <!--<md-icon class="share"  md-font-set="fa fa-share-square fa-2x" ng-click="vm.share(image);" >-->
+                      <md-fab-speed-dial  md-open="false" md-direction="down"
+                                          class="md-fling share" >
+                        <md-fab-trigger >
+                          <md-button aria-label="menu" class="md-fab md-primary sharer" >
+                            <md-icon md-font-set="fa fa-share fa-2x " style="vertical-align: text-bottom;"></md-icon>
+                          </md-button>
+                        </md-fab-trigger>
+                        <md-fab-actions>
+                          <md-button aria-label="facebook" class="md-fab md-raised md-mini  facebook">
+                            <a href="#" ng-click="vm.share('facebook',image)"> <md-icon md-font-set="fa fa-facebook fa-2x  " class="facebook"></md-icon></a>
+                          </md-button>
+                          <md-button aria-label="Google+" class="md-fab md-raised md-mini google" >
+                            <a href="#" ng-click="vm.share('google',image)"> <md-icon md-font-set="fa fa-google-plus fa-2x " class="google"></md-icon></a>
+                          </md-button>
+                          <md-button aria-label="twitter" class="md-fab md-raised md-mini twitter" >
+                            <a href="#" ng-click="vm.share('twitter',image)"><md-icon md-font-set="fa fa-twitter fa-2x " class="twitter" ></md-icon></a>
+                          </md-button>
+                        </md-fab-actions>
+                      </md-fab-speed-dial>
+                        <!--</md-icon>-->
+                        <a ng-href="{{image.url}}" download> <md-icon class="download" md-font-set="fa fa-cloud-download fa-2x" ></md-icon></a>
+
+                    </div>
+                    <img bn-lazy-src="{{image.url}}"  style="max-width:100%;max-height: 100%;" alt="{{image.name}}" />
+                </div>
+            </div>
+            <md-grid-tile-footer ng-style="{'background-color':vm.getRandomColor($index)}"> <md-icon  ng-click="vm.expand($event);" class="expand" md-font-set="fa fa-arrows-alt fa-2x" ></md-icon><md-icon class="chart" md-font-set="fa fa-bar-chart fa-2x" ng-click="vm.showChart($event,$index);"></md-icon></md-grid-tile-footer>
+        </md-grid-tile>
+        <md-grid-tile ng-show="vm.scroll && vm.busy" class="animate grey"
+                      md-rowspan="1"
+                      md-colspan="1"
+                      md-colspan-sm="1" >
+            <div class="loader">
+                <div class="border-animate"></div>
+                <div class="cache"><p>Loading</p></div>
+            </div>
+        </md-grid-tile>
+    </md-grid-list>
+</div>

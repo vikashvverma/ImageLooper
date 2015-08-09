@@ -1,0 +1,13 @@
+md-icon.like{
+    float: left;
+}
+md-icon.share{
+    float: right;
+}
+md-icon.download{
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    margin-bottom: 55px;
+    margin-right: 15px;
+}

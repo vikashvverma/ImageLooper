@@ -1,0 +1,33 @@
+<md-dialog aria-label="Demographic of viewers" >
+    <form style="overflow: hidden;">
+        <md-toolbar>
+            <div class="md-toolbar-tools">
+                <h2>Demographic of viewers (in %)</h2>
+                <span flex></span>
+                <md-button class="md-icon-button" ng-click="vm.cancel();">
+                    <md-icon md-font-set="fa fa-times-circle fa-2x" aria-label="Close Chart"></md-icon>
+                </md-button>
+            </div>
+        </md-toolbar>
+        <md-dialog-content style="overflow: hidden;">
+            <!--<div id="piechart" style="min-width: 310px;min-height:400px;">-->
+                <!--{{vm.drawPieChart();}}-->
+            <!--</div>-->
+            <looper-chart data="vm.data" type="vm.type" ></looper-chart>
+            <div id="otherchart"></div>
+        </md-dialog-content>
+        <div class="md-actions" layout="row">
+            <md-radio-group ng-model="vm.type" style="    display: inline-flex;">
+                <md-radio-button value="pie" class="md-primary">Pie</md-radio-button>
+                <md-radio-button value="bar" class="md-accent"> Bar </md-radio-button>
+                <md-radio-button value="column">Column</md-radio-button>
+                <md-radio-button value="line">Line</md-radio-button>
+                <md-radio-button value="spline">Spline</md-radio-button>
+            </md-radio-group>
+            <span flex></span>
+            <md-button ng-click="vm.hide();" class="md-primary">
+                Close
+            </md-button>
+        </div>
+    </form>
+</md-dialog>
