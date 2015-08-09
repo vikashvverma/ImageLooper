@@ -25,7 +25,7 @@ angular
         $stateProvider
             .state('main', {
                 url: '/',
-                templateUrl: 'views/main.html',
+                templateUrl: './views/main.html',
                 controller: 'MainCtrl as vm'
             });
 
