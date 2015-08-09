@@ -24,7 +24,7 @@ Any Server
 
 Extract ImageLooper.zip and go to `ImageLooper` directory.
 
-If Node is installed the install `http-server' and type `http-server -p 9000`. This will start a static server on port `9000`. 
+If Node is installed the install `http-server` and type `http-server -p 9000`. This will start a static server on port `9000`. 
 Now navigate to `http://localhost:9000/` or `http://127.0.0.1:9000/` in your favorite browser.
 
 For other server type `http://localhost:[PORT]/` or `http://127.0.0.1:[PORT]/` in you favorite browser.
