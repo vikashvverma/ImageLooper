@@ -1,12 +1,34 @@
-# image-looper
+#ImageLooper
+Browse, Share and Download images.
 
-This project is generated with [yo angular generator](https://github.com/yeoman/generator-angular)
-version 0.12.0.
+Demo : http://imagelooper.programminggeek.in/
 
-## Build & development
+Follow this document or visit https://github.com/vikashvverma/Imagelooper for complete setup instructions
 
-Run `grunt` for building and `grunt serve` for preview.
+#Overview
 
-## Testing
+This is a simple application that lets you create notes online
 
-Running `grunt test` will run the unit tests with karma.
+Browse Imaages.
+Like an image.
+Download an image.
+Share an image on `Facebook`, `Google+` or `Twitter`.
+
+
+#Prerequisites
+
+Any Server
+
+
+#Setting up the app
+
+Extract ImageLooper.zip and go to `ImageLooper` directory.
+
+If Node is installed the install `http-server' and type `http-server -p 9000`. This will start a static server on port `9000`. 
+Now navigate to `http://localhost:9000/` or `http://127.0.0.1:9000/` in your favorite browser.
+
+For other server type `http://localhost:[PORT]/` or `http://127.0.0.1:[PORT]/` in you favorite browser.
+
+Repository : https://github.com/vikashvverma/ImageLooper
+
+Visit http://imagelooper.programminggeek.in/ to see the demo
