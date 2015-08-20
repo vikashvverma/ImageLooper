@@ -90,188 +90,188 @@ angular.module('imageLooperApp')
       })
     };
     vm.next();
-//vm.images = [
-//    {
-//        "name": "2000px-National_Security_Agency.svg.png",
-//        "url": "http://cdn.gainsight.0x10.info/api/images/2000px-National_Security_Agency.svg.png",
-//        "demographic": {
-//            "USA": 60,
-//            "China": 29,
-//            "India": 47
-//        }
-//    },
-//    {
-//        "name": "2000px-Virtual_Private_Network_overview.svg.png",
-//        "url": "http://cdn.gainsight.0x10.info/api/images/2000px-Virtual_Private_Network_overview.svg.png",
-//        "demographic": {
-//            "USA": 17,
-//            "China": 12,
-//            "India": 15
-//        }
-//    },
-//    {
-//        "name": "207138-iPhone6-device2.jpg",
-//        "url": "http://cdn.gainsight.0x10.info/api/images/207138-iPhone6-device2.jpg",
-//        "demographic": {
-//            "USA": 97,
-//            "China": 46,
-//            "India": 97
-//        }
-//    },
-//    {
-//        "name": "220px-Profilewireframe.png",
-//        "url": "http://cdn.gainsight.0x10.info/api/images/220px-Profilewireframe.png",
-//        "demographic": {
-//            "USA": 73,
-//            "China": 50,
-//            "India": 44
-//        }
-//    },
-//    {
-//        "name": "242f0dfa63169396a65834fe2fcd55d9.jpg",
-//        "url": "http://cdn.gainsight.0x10.info/api/images/242f0dfa63169396a65834fe2fcd55d9.jpg",
-//        "demographic": {
-//            "USA": 9,
-//            "China": 11,
-//            "India": 87
-//        }
-//    },
-//    {
-//        "name": "27f8ab925bf70045abb84eda1d94d04b.jpg",
-//        "url": "http://cdn.gainsight.0x10.info/api/images/27f8ab925bf70045abb84eda1d94d04b.jpg",
-//        "demographic": {
-//            "USA": 20,
-//            "China": 65,
-//            "India": 14
-//        }
-//    },
-//    {
-//        "name": "297548-apple-macbook-air-11-inch-mid-2012.jpg",
-//        "url": "http://cdn.gainsight.0x10.info/api/images/297548-apple-macbook-air-11-inch-mid-2012.jpg",
-//        "demographic": {
-//            "USA": 89,
-//            "China": 34,
-//            "India": 11
-//        }
-//    },
-//    {
-//        "name": "3b5432d2fbb445e44c68e26b9111489e-d6lva07.jpg",
-//        "url": "http://cdn.gainsight.0x10.info/api/images/3b5432d2fbb445e44c68e26b9111489e-d6lva07.jpg",
-//        "demographic": {
-//            "USA": 26,
-//            "China": 18,
-//            "India": 60
-//        }
-//    },
-//    {
-//        "name": "402ec059fa9d8314ba7ea7752d309136-d6lv9vv.jpg",
-//        "url": "http://cdn.gainsight.0x10.info/api/images/402ec059fa9d8314ba7ea7752d309136-d6lv9vv.jpg",
-//        "demographic": {
-//            "USA": 92,
-//            "China": 86,
-//            "India": 35
-//        }
-//    },
-//    {
-//        "name": "4682.Bing-logo-orange-RGB.jpg",
-//        "url": "http://cdn.gainsight.0x10.info/api/images/4682.Bing-logo-orange-RGB.jpg",
-//        "demographic": {
-//            "USA": 61,
-//            "China": 97,
-//            "India": 25
-//        }
-//    },
-//    {
-//        "name": "10-25-13_pinterest-quotes.jpg",
-//        "url": "http://cdn.gainsight.0x10.info/api/images/10-25-13_pinterest-quotes.jpg",
-//        "demographic": {
-//            "USA": 55,
-//            "China": 60,
-//            "India": 34
-//        }
-//    },
-//    {
-//        "name": "1102-swift-inset-4.jpg",
-//        "url": "http://cdn.gainsight.0x10.info/api/images/1102-swift-inset-4.jpg",
-//        "demographic": {
-//            "USA": 57,
-//            "China": 5,
-//            "India": 85
-//        }
-//    },
-//    {
-//        "name": "11223_497006_700b.jpg",
-//        "url": "http://cdn.gainsight.0x10.info/api/images/11223_497006_700b.jpg",
-//        "demographic": {
-//            "USA": 96,
-//            "China": 11,
-//            "India": 84
-//        }
-//    },
-//    {
-//        "name": "113009-taylor-swift-400_1.jpg%3Fitok%3D06fRPQeD",
-//        "url": "http://cdn.gainsight.0x10.info/api/images/113009-taylor-swift-400_1.jpg%3Fitok%3D06fRPQeD",
-//        "demographic": {
-//            "USA": 5,
-//            "China": 48,
-//            "India": 20
-//        }
-//    },
-//    {
-//        "name": "12.png",
-//        "url": "http://cdn.gainsight.0x10.info/api/images/12.png",
-//        "demographic": {
-//            "USA": 24,
-//            "China": 62,
-//            "India": 17
-//        }
-//    },
-//    {
-//        "name": "137005-Nerd-Girl-Drawing.jpg",
-//        "url": "http://cdn.gainsight.0x10.info/api/images/137005-Nerd-Girl-Drawing.jpg",
-//        "demographic": {
-//            "USA": 69,
-//            "China": 56,
-//            "India": 64
-//        }
-//    },
-//    {
-//        "name": "141010005851bing.jpg",
-//        "url": "http://cdn.gainsight.0x10.info/api/images/141010005851bing.jpg",
-//        "demographic": {
-//            "USA": 44,
-//            "China": 5,
-//            "India": 100
-//        }
-//    },
-//    {
-//        "name": "1499756638_fd4917c94f_b.jpg",
-//        "url": "http://cdn.gainsight.0x10.info/api/images/1499756638_fd4917c94f_b.jpg",
-//        "demographic": {
-//            "USA": 22,
-//            "China": 11,
-//            "India": 86
-//        }
-//    },
-//    {
-//        "name": "2000px-9GAG_new_logo.svg.png",
-//        "url": "http://cdn.gainsight.0x10.info/api/images/2000px-9GAG_new_logo.svg.png",
-//        "demographic": {
-//            "USA": 78,
-//            "China": 62,
-//            "India": 38
-//        }
-//    },
-//    {
-//        "name": "2000px-NASA_logo.svg.png",
-//        "url": "http://cdn.gainsight.0x10.info/api/images/2000px-NASA_logo.svg.png",
-//        "demographic": {
-//            "USA": 2,
-//            "China": 97,
-//            "India": 27
-//        }
-//    }
-//];
+vm.images = [
+    {
+        "name": "2000px-National_Security_Agency.svg.png",
+        "url": "http://cdn.gainsight.0x10.info/api/images/2000px-National_Security_Agency.svg.png",
+        "demographic": {
+            "USA": 60,
+            "China": 29,
+            "India": 47
+        }
+    },
+    {
+        "name": "2000px-Virtual_Private_Network_overview.svg.png",
+        "url": "http://cdn.gainsight.0x10.info/api/images/2000px-Virtual_Private_Network_overview.svg.png",
+        "demographic": {
+            "USA": 17,
+            "China": 12,
+            "India": 15
+        }
+    },
+    {
+        "name": "207138-iPhone6-device2.jpg",
+        "url": "http://cdn.gainsight.0x10.info/api/images/207138-iPhone6-device2.jpg",
+        "demographic": {
+            "USA": 97,
+            "China": 46,
+            "India": 97
+        }
+    },
+    {
+        "name": "220px-Profilewireframe.png",
+        "url": "http://cdn.gainsight.0x10.info/api/images/220px-Profilewireframe.png",
+        "demographic": {
+            "USA": 73,
+            "China": 50,
+            "India": 44
+        }
+    },
+    {
+        "name": "242f0dfa63169396a65834fe2fcd55d9.jpg",
+        "url": "http://cdn.gainsight.0x10.info/api/images/242f0dfa63169396a65834fe2fcd55d9.jpg",
+        "demographic": {
+            "USA": 9,
+            "China": 11,
+            "India": 87
+        }
+    },
+    {
+        "name": "27f8ab925bf70045abb84eda1d94d04b.jpg",
+        "url": "http://cdn.gainsight.0x10.info/api/images/27f8ab925bf70045abb84eda1d94d04b.jpg",
+        "demographic": {
+            "USA": 20,
+            "China": 65,
+            "India": 14
+        }
+    },
+    {
+        "name": "297548-apple-macbook-air-11-inch-mid-2012.jpg",
+        "url": "http://cdn.gainsight.0x10.info/api/images/297548-apple-macbook-air-11-inch-mid-2012.jpg",
+        "demographic": {
+            "USA": 89,
+            "China": 34,
+            "India": 11
+        }
+    },
+    {
+        "name": "3b5432d2fbb445e44c68e26b9111489e-d6lva07.jpg",
+        "url": "http://cdn.gainsight.0x10.info/api/images/3b5432d2fbb445e44c68e26b9111489e-d6lva07.jpg",
+        "demographic": {
+            "USA": 26,
+            "China": 18,
+            "India": 60
+        }
+    },
+    {
+        "name": "402ec059fa9d8314ba7ea7752d309136-d6lv9vv.jpg",
+        "url": "http://cdn.gainsight.0x10.info/api/images/402ec059fa9d8314ba7ea7752d309136-d6lv9vv.jpg",
+        "demographic": {
+            "USA": 92,
+            "China": 86,
+            "India": 35
+        }
+    },
+    {
+        "name": "4682.Bing-logo-orange-RGB.jpg",
+        "url": "http://cdn.gainsight.0x10.info/api/images/4682.Bing-logo-orange-RGB.jpg",
+        "demographic": {
+            "USA": 61,
+            "China": 97,
+            "India": 25
+        }
+    },
+    {
+        "name": "10-25-13_pinterest-quotes.jpg",
+        "url": "http://cdn.gainsight.0x10.info/api/images/10-25-13_pinterest-quotes.jpg",
+        "demographic": {
+            "USA": 55,
+            "China": 60,
+            "India": 34
+        }
+    },
+    {
+        "name": "1102-swift-inset-4.jpg",
+        "url": "http://cdn.gainsight.0x10.info/api/images/1102-swift-inset-4.jpg",
+        "demographic": {
+            "USA": 57,
+            "China": 5,
+            "India": 85
+        }
+    },
+    {
+        "name": "11223_497006_700b.jpg",
+        "url": "http://cdn.gainsight.0x10.info/api/images/11223_497006_700b.jpg",
+        "demographic": {
+            "USA": 96,
+            "China": 11,
+            "India": 84
+        }
+    },
+    {
+        "name": "113009-taylor-swift-400_1.jpg%3Fitok%3D06fRPQeD",
+        "url": "http://cdn.gainsight.0x10.info/api/images/113009-taylor-swift-400_1.jpg%3Fitok%3D06fRPQeD",
+        "demographic": {
+            "USA": 5,
+            "China": 48,
+            "India": 20
+        }
+    },
+    {
+        "name": "12.png",
+        "url": "http://cdn.gainsight.0x10.info/api/images/12.png",
+        "demographic": {
+            "USA": 24,
+            "China": 62,
+            "India": 17
+        }
+    },
+    {
+        "name": "137005-Nerd-Girl-Drawing.jpg",
+        "url": "http://cdn.gainsight.0x10.info/api/images/137005-Nerd-Girl-Drawing.jpg",
+        "demographic": {
+            "USA": 69,
+            "China": 56,
+            "India": 64
+        }
+    },
+    {
+        "name": "141010005851bing.jpg",
+        "url": "http://cdn.gainsight.0x10.info/api/images/141010005851bing.jpg",
+        "demographic": {
+            "USA": 44,
+            "China": 5,
+            "India": 100
+        }
+    },
+    {
+        "name": "1499756638_fd4917c94f_b.jpg",
+        "url": "http://cdn.gainsight.0x10.info/api/images/1499756638_fd4917c94f_b.jpg",
+        "demographic": {
+            "USA": 22,
+            "China": 11,
+            "India": 86
+        }
+    },
+    {
+        "name": "2000px-9GAG_new_logo.svg.png",
+        "url": "http://cdn.gainsight.0x10.info/api/images/2000px-9GAG_new_logo.svg.png",
+        "demographic": {
+            "USA": 78,
+            "China": 62,
+            "India": 38
+        }
+    },
+    {
+        "name": "2000px-NASA_logo.svg.png",
+        "url": "http://cdn.gainsight.0x10.info/api/images/2000px-NASA_logo.svg.png",
+        "demographic": {
+            "USA": 2,
+            "China": 97,
+            "India": 27
+        }
+    }
+];
 
     vm.showChart = function (ev, index) {
       chartService.setChartData(vm.images[index].demographic);
