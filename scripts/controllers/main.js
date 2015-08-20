@@ -89,7 +89,7 @@ angular.module('imageLooperApp')
         $log.error("Unable to fetch images!");
       })
     };
-    vm.next();
+    //vm.next();
 vm.images = [
     {
         "name": "2000px-National_Security_Agency.svg.png",
